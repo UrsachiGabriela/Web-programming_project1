@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<jucatori>
+     <masculin>
+          <jucator id="1">
+               <nume> Nadal </nume>
+               <prenume> Rafael </prenume>
+               <varsta>35 </varsta>
+               <tara>Spania</tara>
+               <activ> True </activ>
+               <simplu>
+                    <victorii> 1048 </victorii>
+                    <infrangeri> 210 </infrangeri>
+                    <numar_titluri> 91 </numar_titluri>
+                    <pozitie_clasament> 4 </pozitie_clasament>
+               </simplu>
+
+               <dublu>
+                    <victorii> 138 </victorii>
+                    <infrangeri> 74 </infrangeri>
+                    <numar_titluri> 8 </numar_titluri>
+                    <pozitie_clasament> 385 </pozitie_clasament>
+               </dublu>
+               
+          </jucator>
+
+          <jucator id="2">
+               <nume> Djokovic </nume>
+               <prenume> Novac </prenume>
+               <varsta>34 </varsta>
+               <tara>Serbia</tara>
+               <activ> True </activ>
+               <simplu>
+                    <victorii> 991 </victorii>
+                    <infrangeri> 201 </infrangeri>
+                    <numar_titluri> 86 </numar_titluri>
+                    <pozitie_clasament> 1 </pozitie_clasament>
+               </simplu>
+
+               <dublu>
+                    <victorii> 61 </victorii>
+                    <infrangeri> 76 </infrangeri>
+                    <numar_titluri> 1 </numar_titluri>
+                    <pozitie_clasament> 333 </pozitie_clasament>
+               </dublu>
+               
+          </jucator>
+     </masculin>
+
+
+     <feminin>
+          <jucator id="3">
+               <nume> Raducanu </nume>
+               <prenume> Emma </prenume>
+               <varsta> 19 </varsta>
+               <tara> Marea Britanie </tara>
+               <activ> True </activ>
+               <simplu>
+                    <victorii> 77 </victorii>
+                    <infrangeri> 28 </infrangeri>
+                    <numar_titluri> 1 </numar_titluri>
+                    <pozitie_clasament> 12 </pozitie_clasament>
+               </simplu>
+
+               <dublu>
+                    <victorii> 0 </victorii>
+                    <infrangeri> 0 </infrangeri>
+                    <numar_titluri> 0 </numar_titluri>
+                    <pozitie_clasament> 0 </pozitie_clasament>
+               </dublu>
+          </jucator>     
+     </feminin>
+</jucatori>
+

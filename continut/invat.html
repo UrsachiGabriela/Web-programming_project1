@@ -1,0 +1,96 @@
+
+            <aside>
+                <nav>
+                    <a href="#section1" class="selectedLink">INFORMAȚII GENERALE</a> 
+                    <a href="#section2" class="selectedLink">DESENARE DREPTUNGHIURI</a> 
+                    <a href="#section3" class="selectedLink">MODIFICARE TABEL</a> 
+                </nav>
+            </aside>
+            <div>
+                <section id="section1">
+                    <h2>Informații generale</h2>
+                    <p> 
+                        Data curentă:
+                        <span id="timp"></span>
+                    </p>
+                    <p> 
+                       URL:
+                        <span id="url"></span>
+                    </p>
+
+                    <p> 
+                        Locație :
+                        <span id="locatie"></span>
+                    </p>
+
+                    <p> 
+                        Browser :
+                        <span id="browser"></span>
+                    </p>
+
+                    
+                    <p> 
+                        Sistem de operare :
+                        <span id="os"></span>
+                    </p>
+                </section>
+
+
+                <section id="section2">
+                    <h2>Învăț să desenez dreptunghiuri</h2>
+                    <p>Modifică imaginea de mai jos, astfel încât fiecare dreptunghi cu chenar alb sa fie de o altă culoare.</p>
+                    <form id="selectColorsForm">
+                        
+                        <label for="borderColor">Selectează culoarea pentru margini:</label>
+                        <input type="color" id="borderColor" name="borderColor" value="#ff0000">
+                        
+                        <label for="fillColor">Selectează culoarea pentru umplere:</label>
+                        <input type="color" id="fillColor" name="fillColor" value="#ffe000"> 
+                        
+                        
+                    </form>
+
+                    
+                                        
+                    <canvas id="myCanvas"  onclick="drawSection2(event)" width="731" height="403"></canvas>
+
+
+
+
+                </section>
+
+
+                <section id="section3">
+                    <h2>Învăț să modific tabele</h2>
+                    <label for="table_bg">Fundal</label>
+                    <input id="table_bg" type="color">
+                    <br>
+
+                    <label>Poziție</label>
+                    <input id="insert_position" type="number">
+
+                    <button class="add_columnrow_button" onclick="row_insert()">Insert row</button>
+                    <button class="add_columnrow_button" onclick="column_insert()">Insert column</button>
+                
+                    <table id="js_table" class="table_style_1">
+                            <tr>
+                                <th>JUCĂTOR</th>
+                                <th>ȚARA</th>
+                            </tr>
+                            <tr>
+                                <td>Simona Halep</td>
+                                <td>România</td>
+                            </tr>
+                            <tr>
+                                <td>Johanna Konta</td>
+                                <td>Anglia</td>
+                            </tr>
+ 
+
+            
+                    </table>
+                
+                
+                </section>
+            </div>
+   

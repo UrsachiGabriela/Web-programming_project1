@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:element name="jucatori">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="masculin">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="jucator">
+                            <xs:complexType>
+                                <xs:sequence>
+
+                                    <xs:element name="nume" type="xs:string" />
+                                    <xs:element name="prenume" type="xs:string" />
+                                    <xs:element name="varsta" type="xs:integer" />
+                                    <xs:element name="tara" type="xs:string" />
+                                    <xs:element name="activ" type="xs:string" />
+                                                    
+
+                                    <xs:element name="simplu">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="victorii" type="xs:integer" />
+                                                <xs:element name="infrangeri" type="xs:integer" />
+                                                <xs:element name="numar_titluri" type="xs:integer" />
+                                                <xs:element name="pozitie_clasament" type="xs:integer" />                        
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                    <xs:element name="dublu">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="victorii" type="xs:integer" />
+                                                <xs:element name="infrangeri" type="xs:integer" />
+                                                <xs:element name="numar_titluri" type="xs:integer" />
+                                                <xs:element name="pozitie_clasament" type="xs:integer" />  
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="id" type="xs:integer" />
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+
+
+            <xs:element name="feminin">
+                <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="jucator">
+                            <xs:complexType>
+                    
+                                <xs:sequence>
+                                    <xs:element name="nume" type="xs:string" />
+                                    <xs:element name="prenume" type="xs:string" />
+                                    <xs:element name="varsta" type="xs:integer" />
+                                    <xs:element name="tara" type="xs:string" />
+                                    <xs:element name="activ" type="xs:string" />
+                                                    
+
+                                    <xs:element name="simplu">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="victorii" type="xs:integer" />
+                                                <xs:element name="infrangeri" type="xs:integer" />
+                                                <xs:element name="numar_titluri" type="xs:integer" />
+                                                <xs:element name="pozitie_clasament" type="xs:integer" />                        
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+
+                                    <xs:element name="dublu">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="victorii" type="xs:integer" />
+                                                <xs:element name="infrangeri" type="xs:integer" />
+                                                <xs:element name="numar_titluri" type="xs:integer" />
+                                                <xs:element name="pozitie_clasament" type="xs:integer" />  
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="id" type="xs:integer" />
+                            </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

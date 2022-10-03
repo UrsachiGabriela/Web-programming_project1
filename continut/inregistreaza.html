@@ -1,0 +1,120 @@
+
+            <aside>
+                <nav>
+                    <a href="#creareCont" class="selectedLink">CREARE CONT</a> 
+                </nav>
+            </aside>
+            
+            <div id="creareCont">     
+                <h2>CREARE CONT</h2>  
+                <p>Pentru a putea beneficia de facilitatea de găsire a unui partener de tenis în județul/orașul dorit,
+                 este necesară crearea unui cont de utilizator. </p>
+
+
+                    <form method="post" action="/api/utilizatori" class="formContainer">
+                                <!--informatii generale-->
+                                <fieldset>
+                                    <legend>INFORMAȚII GENERALE:</legend>
+                                    <label class="col1" for="username">Nume utilizator</label>
+                                    <input class="col2" type="text" name="username" id="username"><br>
+                
+                                    <label class="col1" for="parola">Parola</label> 
+                                    <input class="col2" type="password" name="parola" id="parola"><br>
+                
+                                    <label class="col1" for="nume">Nume</label> 
+                                    <input class="col2" type="text" name="nume" id="nume"><br>
+                
+                                    <label class="col1" for="prenume">Prenume</label> 
+                                    <input class="col2" type="text" name="prenume" id="prenume"><br>  
+                
+                                    <label class="col1" for="email">Email</label> 
+                                    <input class="col2" type="email" name="email" id="email"><br>
+                
+                                    <label class="col1" for="telefon">Telefon</label> 
+                                    <input class="col2" type="tel" name="telefon" id="telefon"><br>
+                                    
+                                    <label class="col1" for="judet">Județ</label>
+                                    <select class="col2" name="judet" id="judet">
+                                        <option value="alba">Alba</option>
+                                        <option value="arad">Arad</option>
+                                        <option value="arges">Argeș</option>
+                                        <option value="bacau">Bacău</option>
+                                        <option value="bucuresti">București</option>
+                                        <option value="buzau">Buzău</option>
+                                        <option value="cluj">Cluj</option>
+                                        <option value="constanta">Constanța</option>
+                                        <option value="galati">Galați</option>
+                                        <option value="iasi">Iași</option>
+                                        <option value="sibiu">Sibiu</option>
+                                        <option value="suceava">Suceava</option>
+                                    </select><br>
+                                </fieldset>
+                
+                    
+                    
+                                <!--informatii personale-->
+                                <fieldset>
+                                    <legend>INFORMAȚII PERSONALE:</legend>
+                
+                                    <label class="col1" for="sexul">Sexul</label>
+                                    <select class="col2" name="sexul" id="sexul">
+                                        <option value="f">F</option>
+                                        <option value="m">M</option>
+                                    </select><br>
+                    
+                                    
+                                    <label class="col1" for="jucator_preferat">Jucător preferat</label>
+                                    <input class="col2" id="jucator_preferat" list="jucatori" name="jucator">
+                                    <datalist id="jucatori">
+                                        <option value="Simona_Halep"></option>
+                                        <option value="Sorana_Cirstea"></option>
+                                        <option value="Serena_Williams"></option>
+                                        <option value="Maria_Sharapova"></option>
+                                        <option value="Ashleigh_Barty"></option>
+                                        <option value="Johanna_Konta"></option>
+                                        <option value="Angelique_Kerber"></option>  
+                                    </datalist><br>
+                    
+                    
+                                    <label class="col1" for="culoare">Culoarea preferată a echipamentului de tenis</label>
+                                    <input class="col2" type="color" name="culoare" id="culoare">
+                                    <br>
+                    
+                    
+                                    <label class="col1" for="data_nasterii">Data nașterii</label>
+                                    <input class="col2" type="date" name="data_nasterii" id="data_nasterii">
+                                    <br>
+                
+                
+                                    <label class="col1" for="ora_nasterii">Ora nașterii</label>
+                                    <input class="col2" type="time" name="ora_nasterii" id="ora_nasterii">
+                                    <br>
+                
+                                    <label class="col1" for="varsta">Vârsta</label>
+                                    <input class="col2" type="range" name="varsta" id="varsta" min="5" max="90">
+                                    <br>
+                
+                                    <label class="col1" for="pagina_personala">Link către pagina personală</label>
+                                    <input class="col2" type="url"  name="pagina_personala" id="pagina_personala">
+                                    <br>
+                                    
+                                    <label class="col1" class="col1" for="descriere">Despre mine:</label> 
+                                    <textarea class="col2" id="descriere" name="descriere" rows="4" cols="50"></textarea> <br>
+                                    <br>
+                                        
+                                </fieldset>
+                               
+                                
+                    
+                                <input type="radio" id="accept" name="accept" value="accept" onclick="acceptTerms()"> 
+                                <label for="accept">Accept termenii si conditiile</label>
+                                
+                    
+        
+                                <input id="submit_btn" type="submit" value="Creare cont" disabled>
+                    </form>
+
+                        
+            </div>
+            
+ 

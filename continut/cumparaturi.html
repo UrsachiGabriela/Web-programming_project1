@@ -1,0 +1,50 @@
+
+<aside>
+    <nav>
+        <a href="#cumparaturi" class="selectedLink">LISTA DE CUMPĂRĂTURI</a> 
+
+    </nav>
+</aside>
+
+            
+            <div id="cumparaturi">     
+                <h2>CUMPĂRĂTURI</h2>  
+
+                    <form class="formContainer">
+                                <!--informatii generale-->
+                                <fieldset class="shopping">
+                                    <legend>CUMPĂRĂTURI:</legend>
+
+                                    <span id="firstElem">
+                                        <label class="col1_shopping" for="nume">Nume produs </label> <br>
+                                        <input class="col1_shopping" type="text" name="nume" id="nume">
+                    
+                                    </span>
+
+                                    <span id="secondElem">
+                                        <label class="col2_shopping" for="cantitate">Cantitate</label> <br>
+                                        <input class="col2_shopping" type="text" name="cantitate" id="cantitate">
+    
+                                    </span>
+
+                                </fieldset>
+                
+                    
+                                <button onclick="cumpara(); return false;">Adaugă</button>   
+                                
+                                <br><br>
+                                <div>Selectează metoda de stocare:</div>
+                                <input type="radio" id="localStorage" name="store_type" value="local storage" onclick="changeStorage()">
+                                <label for="localStorage">localStorage</label><br>
+                                <input type="radio" id="indexedDB" name="store_type" value="indexedDB" onclick="changeStorage()">
+                                <label for="indexedDB">indexedDB</label><br>
+                    </form>
+
+                    <table id="lista_cumparaturi" >
+                        <tr><th>Id</th><th>Produs</th><th>Cantitate</th></tr>
+                    </table>
+
+                        
+            </div>
+            
+ 
